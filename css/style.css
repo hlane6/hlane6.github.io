@@ -1,0 +1,223 @@
+---
+  backup-color: #1d192c
+---
+
+/*-- Common Css --*/
+
+body {
+  font-family: 'Inconsolata', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Space Mono', monospace;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+  text-decoration: none !important;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*-- Title Start --*/
+
+#title {
+  background: linear-gradient(to right, #{{ site.colors.primary }} 25%, #{{ site.colors.primary2 }} 150%);
+  padding: 50px 0 75px 0;
+}
+
+#title {
+  color: #E3E3E4;
+}
+
+#title h1 {
+  font-weight: 200;
+  font-size: 75px;
+  line-height: 60px;
+  letter-spacing: 10px;
+  padding-bottom: 45px;
+}
+
+#title p {
+  font-size: 23px;
+  line-height: 40px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+/*-- About --*/
+
+#about {
+  background: #fff;  
+  padding: 50px 0;
+}
+
+#about p {
+  text-align: center;
+}
+
+/*-- Projects Start --*/
+
+#projects {
+  text-align: center;
+  padding: 50px 0;
+  background: #efefef;
+}
+
+#projects .projects-item {
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#projects .projects-item h4 {
+  padding-top: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+#projects .projects-item p {
+  padding-top: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/*-- Resume --*/
+
+#resume {
+  background: #{{ site.colors.primary }};
+  padding: 50px 0px;
+  text-align: center;
+  color: #fff;
+}
+
+#resume .btn-resume {
+  padding: 15px 35px;
+  border: none;
+  background-color: #fff;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+/*-- Contact-Form Start --*/
+
+#contact-form {
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+#contact-form h2 {
+  padding-top: 50px;  
+}
+
+#contact-form form .form-group {
+  padding-bottom: 15px;
+  margin: 0px;
+}
+
+#contact-form form .form-group .form-control {
+  background: #F6F8FA;
+  height: 60px;
+  border: 1px solid #EEF2F6;
+  box-shadow: none;
+  width: 100%;
+}
+
+#contact-form form .form-group-2 {
+  padding-bottom: 15px;
+  margin: 0px;
+}
+
+#contact-form form .form-group-2 textarea {
+  background: #F6F8FA;
+  height: 135px;
+  border: 1px solid #EEF2F6;
+  box-shadow: none;
+  width: 100%;
+}
+
+#contact-form button {
+  padding: 15px 35px;
+  border: none;
+  background-color: #{{ site.colors.primary }};
+  font-size: 15px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+/*-- Footer Start --*/
+
+footer {
+  background: #{{ site.colors.primary }};
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .footer-manu {
+  padding-bottom: 25px;
+}
+
+footer .footer-manu ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer .footer-manu ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+footer .footer-manu ul li a:hover {
+  color: #ddd;
+}
