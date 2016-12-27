@@ -119,6 +119,10 @@ a:active {
   background-color: #{{ site.colors.primary }};
 }
 
+#projects .projects-item h4:hover {
+    background-color: #{{ site.colors.primary2 }};
+}
+
 #projects .projects-item p {
   padding: 10px;
   margin: 0;
