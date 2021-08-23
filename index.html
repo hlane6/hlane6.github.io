@@ -1,70 +1,133 @@
----
-layout: default
-title: Harry Lane
-permalink: /
----
-
-<!-- About -->
-<section id="about">
-  <div class="container">
-    <div class="row section-title">
-      <div class="col-md-12">
-        <h2>About</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <p>
-          Hi! I'm Harry. I like meeting new people, hearing new ideas, and solving on hard problems.
-          I'm an aspiring developer who wants to help improve the lives of people everywhere with technology.
-          Look at some of the work I've done or contact me below.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects">
-  <div class="container">
-    <div class="row section-title">
-      <h2>Projects</h2>
-    </div>
-    
-    {% for project in site.projects %}
-      {% capture evenodd %}{% cycle 'odd', 'even' %}{% endcapture %}
-      {% if evenodd == 'odd' %}
-        <div class="row">
-      {% endif %}
-    
-      <div class="col-sm-5 {% if evenodd == 'odd' %} col-sm-offset-1 {% endif %}">
-        <div class="projects-item">
-          <a href="{{ project.href }}">
-              <h4>{{ project.title }}</h4>
-          </a>
-          <p>{{ project.description }}</p>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="hl-intro">
+        <div class="container">
+          <nav class="navbar d-flex flex-row-reverse">
+            <a class="navbar-brand" href="mailto:harryc.lane@gmail.com">
+              Contact
+            </a>
+          </nav>
+          <h1 class="display-1 hl-title">Harry Lane</h1>
+          <h4>Software Engineer @ Apple</h2>
+          <p class="lead">
+            Still figuring out how to write a good bio. Enjoy solving hard
+            problems and working at the intersection of design and technology.
+            In my free time, you may find me playing video games or
+            snowboarding down the mountain.
+          </p>
         </div>
       </div>
-      
-      {% if evenodd == 'even' %}
+      <hr />
+      <div class="hl-timeline hl-section d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h4>SwiftUI @ Apple</h3>
+              <h6>Apr. 2020 - Current</h4>
+            </div>
+              <div class="col-sm">
+                <p>
+                  As a Framework Engineer, I contributed directly to
+                  the SwiftUI framework. With the help of my teammates,
+                  I learned the ins and outs of designing great SwiftUI
+                  APIs. Over the years, I helped design and implement APIs
+                  like <a class="font-monospace text-reset hl-code" href="https://developer.apple.com/documentation/swiftui/view/searchable(text:placement:prompt:)-18a8f">.searchable()</a>,
+                  <a class="font-monospace text-reset hl-code" href="https://developer.apple.com/documentation/swiftui/view/toolbar(content:)-5w0tj">.toolbar()</a>,
+                  and <a class="font-monospace text-reset hl-code" href="https://developer.apple.com/documentation/swiftui/focusstate/">@FocusState</a>.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <h4>Photos UI @ Apple</h3>
+                <h6>Feb. 2018 - Apr.2020</h4>
+              </div>
+              <div class="col-sm">
+                <p>
+                  As a UI Engineer, I built and improved different areas of
+                  the Photos app on both iOS and macOS. I brought life to
+                  the For You tab. I improved the infrastructure of grid
+                  technologies to bring improved performance to accessibility
+                  features. While on loan to the Responsiveness Tentpole, I
+                  learned how to investigate scrolling performance and applied
+                  that knowledge to improve week view scrolling performance in
+                  Calendar.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <h4>Georgia Tech</h3>
+                <h6>Dec. 2017</h4>
+              </div>
+              <div class="col-sm">
+                <p>
+                  I graduated from the Georgia Institute of Technology with
+                  a degree in Computer Science after focusing on AI and systems
+                  programming.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      {% endif %}
-    {% endfor %}
-    
-  </div>
-</section>
-
-
-<!-- Resume Download -->
-<section id="resume">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 section-title">
-        <h2>Need a Resume?</h2>
-        <a class="btn btn-default btn-resume" href="/harrylane_resume.pdf" >Download One Here</a>
-      </div>
-    </div>
-  </div>
-</section>
-
+        <hr />
+        <div class="hl-skills hl-section d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <p class="fs-4">SwiftUI</p>
+              </div>
+              <div class="col-sm">
+                <p class="fs-4">UIKit</p>
+              </div>
+              <div class="col-sm">
+                <p class="fs-4">React</p>
+              </div>
+              <div class="col-sm">
+                <p class="fs-4">C</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <p class="fs-4">Swift</p>
+              </div>
+              <div class="col-sm">
+                <p class="fs-4">AppKit</p>
+              </div>
+              <div class="col-sm">
+                <p class="fs-4">Python</p>
+              </div>
+              <div class="col-sm">
+                <p class="fs-4">Java</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <p class="fs-4">API Design</p>
+              </div>
+              <div class="col-sm">
+                <p class="fs-4">Objective-C</p>
+              </div>
+              <div class="col-sm">
+                <p class="fs-4">Javascript</p>
+              </div>
+              <div class="col-sm">
+                <p class="fs-4">Flask</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="hl-footer">
+          <div class="container">
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
