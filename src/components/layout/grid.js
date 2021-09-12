@@ -26,21 +26,89 @@ export const Row = ({ children }) => {
   )
 }
 
-export const Column = ({ size, children }) => {
+export const Column = ({ size, span=null, children }) => {
   let columnClass = Styles.col
-  switch (size) {
-    case "small":
-      columnClass = Styles.colSm
+  switch (span) {
+    case 2:
+      switch (size) {
+        case "small":
+          columnClass = Styles.colSm2
+          break
+        case "medium":
+          columnClass = Styles.colMd2
+          break
+        case "large":
+          columnClass = Styles.colLg2
+          break
+        default:
+          columnClass = Styles.col2
+          break
+      }
       break
-    case "medium":
-      columnClass = Styles.colMd
+    case 4:
+      switch (size) {
+        case "small":
+          columnClass = Styles.colSm4
+          break
+        case "medium":
+          columnClass = Styles.colMd4
+          break
+        case "large":
+          columnClass = Styles.colLg4
+          break
+        default:
+          columnClass = Styles.col4
+          break
+      }
       break
-    case "large":
-      columnClass = Styles.colLg
+    case 6:
+      switch (size) {
+        case "small":
+          columnClass = Styles.colSm6
+          break
+        case "medium":
+          columnClass = Styles.colMd6
+          break
+        case "large":
+          columnClass = Styles.colLg6
+          break
+        default:
+          columnClass = Styles.col6
+          break
+      }
       break
+    case 8:
+      switch (size) {
+        case "small":
+          columnClass = Styles.colSm8
+          break
+        case "medium":
+          columnClass = Styles.colMd8
+          break
+        case "large":
+          columnClass = Styles.colLg8
+          break
+        default:
+          columnClass = Styles.col8
+          break
+      }
+      break
+    case null:
     default:
-      columnClass = Styles.col
-      break
+      switch (size) {
+        case "small":
+          columnClass = Styles.colSm
+          break
+        case "medium":
+          columnClass = Styles.colMd
+          break
+        case "large":
+          columnClass = Styles.colLg
+          break
+        default:
+          columnClass = Styles.col
+          break
+      }
   }
 
   return (

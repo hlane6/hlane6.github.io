@@ -7,7 +7,7 @@
 /* Utilities */
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .d-flex {
@@ -71,18 +71,6 @@
 }
 
 .col {
-  flex: 1 0 0%;
-}
-
-.col-sm {
-  flex: 1 0 0%;
-}
-
-.col-md {
-  flex: 1 0 0%;
-}
-
-.col-lg {
   flex: 1 0 0%;
 }
 

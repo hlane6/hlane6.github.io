@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Container, Row, Column } from "../layout/grid"
-import * as Styles from "../styles/typography.module.css"
+import * as Styles from "./experiences.module.css"
+import * as Typography from "../styles/typography.module.css"
 
 class ExperienceItem {  
   constructor(id, role, company, dateRange, description) {
@@ -29,12 +30,12 @@ const experienceItems = [
 
 const Experience = ({ item }) => {
   return (
-    <Row>
-      <Column size="small">
-        <h4 className={ Styles.fs4 }>{ item.displayHeader }</h4>
-        <h6 className={ Styles.fs6 }>{ item.dateRange }</h6>
+    <Row className={ Styles.experience }>
+      <Column size="small" span={ 4 }>
+        <h4 className={ Typography.fs4 }>{ item.displayHeader }</h4>
+        <h6 className={ Typography.fs6 }>{ item.dateRange }</h6>
       </Column>
-      <Column size="small">
+      <Column size="small" span={ 8 }>
         <p>{ item.description }</p>
       </Column>
     </Row>

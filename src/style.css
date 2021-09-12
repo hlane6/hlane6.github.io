@@ -32,6 +32,11 @@
   --color-text: #000;
   --color-heading: #1a202c;
   --color-accent: #d1dce5;
+  --color-red: #EB4E3D;
+  --color-green: #63C956;
+  --color-blue: #317AF6;
+  --color-orange: #F19938;
+  --color-yellow: #F7CD46;
 
   /* Layout */
   --gutter-leading: 0.75rem;

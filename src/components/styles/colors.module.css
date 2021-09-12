@@ -1,0 +1,25 @@
+/* Colors */
+
+.progress-gradient-low {
+  width: 33.33%;
+  height: 10px;
+  background: linear-gradient(to right, var(--color-red), var(--color-orange));
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.progress-gradient-medium {
+  width: 66.66%;
+  height: 10px;
+  background: linear-gradient(to right, var(--color-red), var(--color-orange), var(--color-yellow));
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.progress-gradient-high {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, var(--color-red), var(--color-orange), var(--color-yellow), var(--color-green));
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
