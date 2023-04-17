@@ -16,7 +16,7 @@
     "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
-    "gatsby": "^3.12.1",
+    "gatsby": "^3.15.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
